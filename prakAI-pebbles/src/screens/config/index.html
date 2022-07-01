@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="../../css/main.css">
+		<script src="./pre.js"></script>
+		<title>Config</title>
+	</head>
+	<body>
+		
+		<div class="container-fluid">
+
+			<div class="row">
+				<div class="col-sm-7">
+					<h1>Experiment Configuration</h1>
+				</div>
+				<div class="col-sm-4 text-right">
+					<button type="button" 
+							class="btn btn-lg btn-primary test"
+							onclick="validateAndBegin();">
+						Start Experiment
+					 </button>
+				</div>
+				<div class="col-sm-1">
+					<!-- spacer for button -->
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<hr class="thickSeparator">
+				</div>
+			</div>
+
+			
+			<div class="row">
+
+				<div class="col-12 text-left">
+					<button type="button" 
+							class="btn btn-lg btn-primary test"
+							onclick="loadDirectoryOfExperiments()">
+						Load Experiment
+					</button>
+					<button type="button" 
+							class="btn btn-lg btn-primary btn-test"
+							title="Select directory with all users"
+							onclick="loadUserDirectory()">
+						Select save directory
+					</button>
+				</div>
+
+				<div class="col-12">
+					<hr>
+				</div>
+						
+				<div class="col-6">
+					<div class="row">
+						<div class="col-12">
+							Background
+						</div>
+						<div class="col-12">
+							<input type="color" value="#000000" id="backgroundColorPicker">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							Font
+						</div>
+						<div class="col-12">
+							<input type="color" value="#ffffff" id="fontColorPicker">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							Noise Duration
+						</div>
+						<div class="col-12">
+							<input type="number" value="250" id="noiseDurationPicker">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							Blank Duration
+						</div>
+						<div class="col-12">
+							<input type="number" value="1000" id="blankDurationPicker">
+						</div>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="row">
+						<div class="col-12">
+							Size
+						</div>
+						<div class="col-12">
+							<input type="number" value="350" class="slider" id="sizePicker">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							Vertical Spacing
+						</div>
+						<div class="col-12">
+							<input type="number" value="400" class="slider" id="vSpacingPicker">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							Horizontal Spacing
+						</div>
+						<div class="col-12">
+							<input type="number" value="400" class="slider" id="hSpacingPicker">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							Distance from Top of Main Image
+						</div>
+						<div class="col-12">
+							<input type="number" value="210" class="slider" id="mainImageHeightPicker">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							Distance from Top of Image Grid
+						</div>
+						<div class="col-12">
+							<input type="number" value="10" class="slider" id="imageGridHeightPicker">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-12">
+					<hr class="thinSeparator">
+				</div>
+
+			</div>
+
+		</div>
+		<div id="experimental-data-directory"></div>
+		<div id="experimentPreviewList" class="experimentPreviewList"></div>
+
+		<script src="./post.js"></script>
+	</body>
+</html>
+
