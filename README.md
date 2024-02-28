@@ -45,7 +45,7 @@ Building PrakAI-Pebbles by completing the following steps:
 1. Install [Electron Forge](https://www.electronforge.io/) by running `npm i -g @electron-forge/cli`
 2. Terminal into your project directory
 3. Create distributable by running `electron-forge make`
-
+* note: if creating version for Mac, the current version of electron is too old to create the arm64 (Apple Silicon) version. Instead, run `electron-forge make --arch=x64 --platform=darwin` to create one compatable with both Apple Silicon and Intel chip. 
 ## About the Naming
 
 ### Why PrakAI?
